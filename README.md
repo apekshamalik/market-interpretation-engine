@@ -1,4 +1,20 @@
-# Macro-Interpretation-Engine
-This tool integrates financial market data with news headlines to identify relationships between news sentiment and changes in government bond yields.  The system focuses on key indicators such as the US 2-Year Treasury Yield and the US 10hat-Year Treasury Yield, which are widely monitored measures of long-term and short-term interest rates.
+# market-interpretation-engine
+this tool integrates equity market data with financial news headlines to identify relationships between news sentiment and movements in stock prices. by combining time-series market data with natural language processing of news content, the system analyzes how information events influence equity returns and market volatility.
 
-I'm choosing to monitor these two maturities because they represent short-term policy expectations and long-term economic expectations.
+Market Data APIs               News APIs
+      ↓                             ↓
+      └──── Data Ingestion Agents ────┘
+                     ↓
+               MCP Server
+                     ↓
+              Data Pipeline
+                     ↓
+           Feature Engineering
+                     ↓
+           Sentiment + Topic NLP
+                     ↓
+            Market Reaction Analysis
+                     ↓
+             Prediction Models
+                     ↓
+          Dashboard / Market Report
