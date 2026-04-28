@@ -18,8 +18,10 @@ Build ingestion pipelines
 ## Documenting Decisions
 Why I chose Postgres: I didn't want a NoSQL database, the market and news data I am working with is inherently relational. In querying Claude to get a better understanding of tech stack, I see that querying on nested semi-structured data
 
-Finnhub for Market prices
+Marketaux for financial news
+Finnhub ticker prices
 NewsAPI for News Data
 
-Finnhub has market data endpints as well as a news endpoint that will act as source of truth, with newsapi providing the human readable context
+Marketaux has market data endpints as well as a news endpoint that will act as source of truth, with newsapi providing the human readable context
 
+Use ORM between Pydantic and Postgres ingestion
