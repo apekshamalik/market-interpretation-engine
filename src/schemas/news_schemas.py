@@ -1,14 +1,17 @@
 from pydantic import BaseModel, Field
-from datetime import datetime
 from typing import List, Optional
+from datetime import datetime
 
-# FINNHUB
-class MarketNewsArticleRequest(BaseModel):
-    category: str = Field(..., description="The category of news to retrieve. Possible values include: general, forex, crypto, merger")
-    minId: Optional[int] = Field(None, description="The minimum news article ID to retrieve. This can be used for pagination.")
+class MarketAuxArticleRequest(BaseModel):
+    apiKey = str = Field("API Token")
+    symbols: list[str] | None = Field(default = None, description = "Tickers mentioned")
+    industries: list[str] | None = Field(default = None, description = "Technology, Industries")
+    published_after: Optional[datetime] | None = Field(default = None, description = "Set day by day")
+    limit = Optional[str] = Field(default = None, description = "Number of articles to return")
 
 class MarketNewsArticleResponse(BaseModel):
     category: str
+
     datetime: datetime
     headline: str
     id: int
