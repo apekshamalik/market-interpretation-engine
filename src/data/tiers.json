@@ -1,0 +1,24 @@
+{
+  "reuters.com": "TIER_1",
+  "apnews.com": "TIER_1",
+  "ap.org": "TIER_1",
+  "bloomberg.com": "TIER_1",
+  "ft.com": "TIER_1",
+  "wsj.com": "TIER_1",
+  "nytimes.com": "TIER_1",
+  "economist.com": "TIER_1",
+
+  "cnbc.com": "TIER_2",
+  "barrons.com": "TIER_2",
+  "marketwatch.com": "TIER_2",
+  "axios.com": "TIER_2",
+  "politico.com": "TIER_2",
+  "washingtonpost.com": "TIER_2",
+  "theguardian.com": "TIER_2",
+  "forbes.com": "TIER_2",
+  "fortune.com": "TIER_2",
+  "npr.org": "TIER_2",
+  "semafor.com": "TIER_2",
+  "yahoo.com": "TIER_2",
+  "businessinsider.com": "TIER_2"
+}
